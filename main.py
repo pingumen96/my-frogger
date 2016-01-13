@@ -10,7 +10,7 @@ font_piccolo=pygame.font.Font('pixeldeb.ttf',18)
 pygame.mixer.music.load('musica.ogg')
 pygame.mixer.music.play(-1)
 
-#gestione FPS, devono aumentare man mano che si va avanti col gioco
+#gestione FPS
 FPS=20
 clock=pygame.time.Clock()
 
@@ -38,7 +38,7 @@ punteggio=0
 #pausa on/off
 pausa=False
 
-#classe del nemico, i parametri servono a piazzarlo nella schermata e stabilire la velocità di movimento
+#classe del nemico, i parametri servono a piazzarlo nella schermata e stabilire la velocità di movimento (che sale finendo il livello)
 class Nemico():
 	def __init__(self, x,y,largh_nem,alt_nem,velocita,colore,senso):
 		self.x=x
